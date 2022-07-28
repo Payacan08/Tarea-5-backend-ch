@@ -1,0 +1,22 @@
+html 
+    head 
+        title='Plantilla Pug'
+    body
+        if length != 0
+            table
+                tr 
+                    th Nombre
+                    th Precio
+                    th Imagen
+                each producto in contenedor
+                    tr 
+                        td= producto.title
+                        td= producto.price
+                        td
+                            img(src=producto.thumbnail width="100" height="100")
+        else 
+            h3 No se encontraron Productos
+        br
+        br
+        a(type="button" href="/") Ingresar Producto
+    style table, tr, th, td {border: 1px solid}

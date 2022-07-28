@@ -1,0 +1,22 @@
+html
+    head 
+        title='Plantilla Pug'
+    body
+        form(action="/productos" method="post")
+            label(for="title") title:
+            input(type="text" id="title" name="title")
+            br
+            br
+            label(for="price") price:
+            input(type="text" id="price" name="price") 
+            br
+            br
+            label(for="thumbnail") thumbnail:
+            input(type="text" id="thumbnail" name="thumbnail")
+            br
+            br
+            input(type="submit", value="Enviar")
+        br
+        br
+        a(href="/productos") Ver Productos
+            
